@@ -48,6 +48,7 @@ export default function Navbar() {
           <a href="#" className="block text-white p-2">Services</a>
           <a href="#" className="block text-white p-2">Contact</a>
           <a href="#" className="block text-white p-2">Contact</a>
+          <a href="#" className="block text-white p-2">Contact</a>
         </div>
       )}
     </nav>
