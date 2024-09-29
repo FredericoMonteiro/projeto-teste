@@ -1,6 +1,7 @@
 "use client"; // Adicionar esta linha no início do arquivo
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,10 +15,10 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-lg font-bold">Logo</div>
         <div className="hidden md:flex space-x-4">
-          <a href="#" className="text-white">Home</a>
-          <a href="#" className="text-white">About</a>
-          <a href="#" className="text-white">Services</a>
-          <a href="#" className="text-white">Contact</a>
+          <Link href="/" className="text-white">Home</Link>
+          <Link href="/about" className="text-white">About</Link>
+          <Link href="/services" className="text-white">Services</Link>
+          <Link href="/contacts" className="text-white">Contact</Link>
         </div>
         <div className="md:hidden">
           <button
@@ -43,14 +44,10 @@ export default function Navbar() {
       </div>
       {isOpen && (
         <div className="md:hidden">
-          <a href="#" className="block text-white p-2">Home</a>
-          <a href="#" className="block text-white p-2">About</a>
-          <a href="#" className="block text-white p-2">Services</a>
-          <a href="#" className="block text-white p-2">Contact</a>
-          <a href="#" className="block text-white p-2">Contact</a>
-          <a href="#" className="block text-white p-2">Contact</a>
-          <a href="#" className="block text-white p-2">Contact</a>
-          <a href="#" className="block text-white p-2">Contact</a>
+          <Link href="/" className="block text-white p-2">Home</Link>
+          <Link href="/about" className="block text-white p-2">About</Link>
+          <Link href="/services" className="block text-white p-2">Services</Link>
+          <Link href="/contacts" className="block text-white p-2">Contact</Link>
         </div>
       )}
     </nav>
